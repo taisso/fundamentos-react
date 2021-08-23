@@ -4,19 +4,23 @@ import ComFilho from "./components/basicos/ComFilho";
 import Card from "./components/layout/Card";
 import Repeticao from "./components/basicos/Repeticao";
 import Condicional from "./components/basicos/Condicional";
-import Pai from './components/comunicacao/direta/Pai'
+import Pai from "./components/comunicacao/direta/Pai";
+import Super from "./components/comunicacao/indireta/Super";
 
 function App() {
   return (
     <div className="App">
-      <Card titulo="#07 - Comunicação Direta">
-        <Pai sobrenome="Freitas"/>
+      <Card titulo="#08 - Comunicação Indireta">
+        <Super />
       </Card>
-       <Card titulo="#05 - Condicional" color="#F96849">
-        <Condicional numero={11}/>
+      <Card titulo="#07 - Comunicação Direta">
+        <Pai sobrenome="Freitas" />
+      </Card>
+      <Card titulo="#05 - Condicional" color="#F96849">
+        <Condicional numero={11} />
       </Card>
       <Card titulo="#04 - Repetição">
-        <Repeticao/>
+        <Repeticao />
       </Card>
       <Card titulo="#03 - Componente Com Filho">
         <ComFilho>
