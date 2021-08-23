@@ -3,10 +3,14 @@ import ComParametro from "./components/ComParametro";
 import ComFilho from "./components/ComFilho";
 import Card from "./components/layout/Card";
 import Repeticao from "./components/Repeticao";
+import Condicional from "./components/Condicional";
 
 function App() {
   return (
     <div className="App">
+       <Card titulo="#05 - Condicional">
+        <Condicional numero={11}/>
+      </Card>
       <Card titulo="#04 - Repetição">
         <Repeticao/>
       </Card>

@@ -1,10 +1,8 @@
-import { FC } from "react";
-
 type PropsType = {
   children: React.ReactNode;
 };
 
-const ComFilho: FC<PropsType> = (props) => {
+const ComFilho = (props: PropsType) => {
   return (
     <div>
       <h2>Os Filhos:</h2>
