@@ -9,5 +9,9 @@ body {
   color: #fff;
   text-align: center;
   font-weight: 300;
-  font-size: 2rem;
+}
+
+
+h1, h2 {
+  font-weight: inherit;
 }
