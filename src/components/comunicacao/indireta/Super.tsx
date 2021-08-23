@@ -1,13 +1,17 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Sub from "./Sub";
 
+const fnCounter = new Set()
+
 const Super = (props: any) => {
+  const [valor, setValor] = useState(0);
 
-  const [valor, setValor] = useState(0)
+  const quandoClicar = useCallback((valor) => {
+    setValor((prevState) => prevState + valor);
+  }, []);
 
-  function quandoClicar(valor) {
-      setValor(valor)
-  }
+  fnCounter.add(quandoClicar)
+  console.log(fnCounter.size)
 
   return (
     <div>

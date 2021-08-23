@@ -6,10 +6,14 @@ import Repeticao from "./components/basicos/Repeticao";
 import Condicional from "./components/basicos/Condicional";
 import Pai from "./components/comunicacao/direta/Pai";
 import Super from "./components/comunicacao/indireta/Super";
+import Input from "./components/form/input";
 
 function App() {
   return (
     <div className="App">
+       <Card titulo="#09 - Input">
+        <Input />
+      </Card>
       <Card titulo="#08 - Comunicação Indireta">
         <Super />
       </Card>
