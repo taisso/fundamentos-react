@@ -7,11 +7,19 @@ import Condicional from "./components/basicos/Condicional";
 import Pai from "./components/comunicacao/direta/Pai";
 import Super from "./components/comunicacao/indireta/Super";
 import Input from "./components/form/input";
+import Contador from "./components/contador/Contador";
+import Mega from "./components/mega/Mega";
 
 function App() {
   return (
     <div className="App">
-       <Card titulo="#09 - Input">
+      <Card titulo="#11 - Mega">
+        <Mega />
+      </Card>
+      <Card titulo="#10 - Contador ">
+        <Contador />
+      </Card>
+      <Card titulo="#09 - Input">
         <Input />
       </Card>
       <Card titulo="#08 - Comunicação Indireta">

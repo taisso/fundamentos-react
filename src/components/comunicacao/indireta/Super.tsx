@@ -11,7 +11,6 @@ const Super = (props: any) => {
   }, []);
 
   fnCounter.add(quandoClicar)
-  console.log(fnCounter.size)
 
   return (
     <div>
